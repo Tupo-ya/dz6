@@ -1,5 +1,5 @@
 def is_palind(string: str):
-    string = string.lower()
+    string = string.lower().replace(' ', '')
 
     result = True
     for i in range(len(string)//2):
@@ -10,3 +10,4 @@ def is_palind(string: str):
 
 print(is_palind('onono'))
 print(is_palind('Hello'))
+print(is_palind('А роза упала на лапу Азора'))
